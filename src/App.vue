@@ -1,6 +1,17 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+
+import { useSeoMeta } from '@unhead/vue'
+
+useSeoMeta({
+  ogUrl: 'https://pgkusn.github.io/unhead-test/',
+  ogType: 'article',
+  ogTitle: 'When Great Minds Don’t Think Alike',
+  ogDescription: 'How much does culture influence creative thinking?',
+  ogImage:
+    'http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg',
+})
 </script>
 
 <template>
